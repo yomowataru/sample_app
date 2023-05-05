@@ -7,8 +7,8 @@ class ListsController < ApplicationController
     @list = List.new(list_params)
     if @list.save
       redirect_to list_path(@list.id)
-    else
-      render :new
+    else 
+      render :new  
     end 
   end
 
